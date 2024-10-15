@@ -2,13 +2,14 @@
 import { ThemeProvider } from 'next-themes';
 import { Toaster } from 'sonner';
 import { AppProgressBar as ProgressBar } from 'next-nprogress-bar';
+import { ReactNode } from 'react';
 
-export function ThemeContext({ children }) {
+const ThemeContext = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider attribute="class">
       <ProgressBar
-        color='#000'
-        height='3px'
+        color="#000"
+        height="3px"
         options={{ showSpinner: false }}
         shallowRouting
       />
@@ -16,4 +17,6 @@ export function ThemeContext({ children }) {
       {children}
     </ThemeProvider>
   );
-}
+};
+
+export default ThemeContext;
