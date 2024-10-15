@@ -37,7 +37,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fr" suppressHydrationWarning>
-      <body className="bg-slate-50 px-4 dark:bg-slate-950">
+      <body className="bg-slate-50 dark:bg-black">
         <ThemeContext>
           <Header />
           <main>{children}</main>

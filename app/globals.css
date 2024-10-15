@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 @layer components {
-  li {
+  .menu {
     @apply relative flex mx-2 gap-2 text-xl after:absolute after:-bottom-[3px] after:left-0 after:h-[2px] after:w-0 after:bg-current after:duration-300 after:ease-in-out hover:no-underline hover:after:w-full dark:hover:text-sky-400;
   }
 }

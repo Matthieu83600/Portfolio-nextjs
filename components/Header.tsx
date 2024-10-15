@@ -4,7 +4,7 @@ import { ThemeSwitcher } from './ThemeSwitcher';
 
 const Header = () => {
   return (
-    <header className="sticky top-0 z-10 bg-inherit pb-5 pt-5 shadow-sm">
+    <header className="sticky top-0 z-10 bg-inherit px-5 pb-5 pt-5 opacity-80 shadow-sm">
       <div className="flex flex-col items-center justify-between gap-4 lg:flex-row">
         <Image
           src="/assets/logo.svg"
@@ -16,20 +16,14 @@ const Header = () => {
         />
         <nav>
           <ul className="flex flex-wrap items-center justify-between p-4">
-            <li>
+            <li className="menu">
               <Link href="/">Accueil</Link>
             </li>
-            <li>
-              <Link href="/">Biographie</Link>
+            <li className="menu">
+              <Link href="/tecnologies">Technologies</Link>
             </li>
-            <li>
-              <Link href="/">Technologies</Link>
-            </li>
-            <li>
+            <li className="menu">
               <Link href="/projets">Projets</Link>
-            </li>
-            <li>
-              <Link href="/contact">Contact</Link>
             </li>
           </ul>
         </nav>
