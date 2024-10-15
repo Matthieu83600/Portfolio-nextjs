@@ -1,8 +1,8 @@
-import { IntroSection } from '../components/Intro';
-import { AboutSection } from '../components/About';
-import { TimeLine } from '../components/Timeline';
+import IntroSection from '../components/Intro';
+import AboutSection from '../components/About';
+import TimeLine from '../components/Timeline';
 
-export default function Home() {
+const Home = () => {
   return (
     <>
       <div className="bg-gradient-to-tr from-[#97f0ff] to-[#af9cfa] dark:from-[#1a1a1a] dark:to-[#3a3a3ace]">
@@ -14,4 +14,6 @@ export default function Home() {
       <TimeLine />
     </>
   );
-}
+};
+
+export default Home;

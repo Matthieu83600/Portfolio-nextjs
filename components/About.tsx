@@ -1,12 +1,13 @@
 import Image from 'next/image';
+import moi from '../public/assets/moi.webp';
 
-export function AboutSection() {
+const AboutSection = () => {
   return (
     <section id="about" className="flex flex-col px-4">
       <div className="mt-7 flex justify-center">
         <Image
           unoptimized
-          src={'./assets/moi.webp'}
+          src={moi || './assets/moi.webp'}
           width={300}
           height={0}
           style={{ width: '320px', height: 'auto' }}
@@ -42,4 +43,6 @@ export function AboutSection() {
       </div>
     </section>
   );
-}
+};
+
+export default AboutSection;

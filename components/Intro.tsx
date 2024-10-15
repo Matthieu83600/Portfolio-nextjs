@@ -1,6 +1,6 @@
 import Link from 'next/link';
 
-export function IntroSection() {
+const IntroSection = () => {
   return (
     <section id="intro" className="flex flex-col px-4">
       <div className="flex flex-col items-center gap-4 py-5">
@@ -34,4 +34,6 @@ export function IntroSection() {
       </div>
     </section>
   );
-}
+};
+
+export default IntroSection;
