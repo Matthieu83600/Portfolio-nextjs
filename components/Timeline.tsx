@@ -1,7 +1,7 @@
 'use client';
 import { useEffect, useRef, useState } from 'react';
 
-const handleExternalLinkClick = (url) => {
+const handleExternalLinkClick = (url: string | URL | undefined) => {
   window.open(url, '_blank');
 };
 
