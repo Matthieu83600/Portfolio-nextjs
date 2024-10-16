@@ -25,8 +25,7 @@ export const metadata: Metadata = {
     'Portfolio développeur front-end',
     'Frontend Developer Portfolio',
   ],
-  creator: 'Matthieu Bonjour',
-  authors: [{ name: 'Matthieu Bonjour', url: 'https://matthieubonjour.fr/' }],
+  creator: 'Matthieu Bonjour'
 };
 
 export default function RootLayout({

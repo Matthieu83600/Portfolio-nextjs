@@ -5,7 +5,7 @@ import TimeLine from '../components/Timeline';
 const Home = () => {
   return (
     <>
-      <div className="bg-gradient-to-tr from-[#97f0ff] to-[#af9cfa] dark:from-[#1a1a1a] dark:to-[#3a3a3ace]">
+      <div className="bg-gradient-to-tr from-[#97f0ff] to-[#6365e7] dark:from-[#1a1a1a] dark:to-[#3a3a3ace]">
         <div className="inset-0 bg-gradient-to-t from-slate-50 to-transparent dark:from-black">
           <IntroSection />
           <AboutSection />

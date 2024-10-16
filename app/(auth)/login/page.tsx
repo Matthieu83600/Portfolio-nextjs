@@ -47,7 +47,7 @@ const LoginPage = () => {
     try {
       setIsLoading(true);
       await signInAdmin(values);
-      router.push('admin/dashboard');
+      router.push('/admin');
     } catch (error: unknown) {
       console.error(error);
       toast.error('Identifiants de connexion invalides');

@@ -1,4 +1,4 @@
-import { FaTwitter, FaGithub, FaLinkedin, FaGitlab } from 'react-icons/fa';
+import { FaTwitter, FaGithub, FaLinkedin, FaGitlab, FaMailBulk } from 'react-icons/fa';
 
 const Footer = () => {
   return (
@@ -8,6 +8,13 @@ const Footer = () => {
           © {new Date().getFullYear()} Matthieu Bonjour. Tous droits réservés.
         </p>
         <div className="flex justify-center space-x-4">
+          <a
+            href="mailto:matthieu83600-pro@outlook.fr"
+            rel="noopener noreferrer"
+            className="hover:text-blue-600 dark:hover:text-sky-400"
+          >
+            <FaMailBulk size={24} />
+          </a>
           <a
             href="https://gitlab.com/Matthieu83600"
             target="_blank"

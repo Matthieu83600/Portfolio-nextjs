@@ -8,7 +8,7 @@ const ThemeContext = ({ children }: { children: ReactNode }) => {
   return (
     <ThemeProvider attribute="class">
       <ProgressBar
-        color="#000"
+        color="#97f0ff"
         height="3px"
         options={{ showSpinner: false }}
         shallowRouting
