@@ -28,8 +28,6 @@ import {
 import { Input } from '@/components/ui/input';
 import { Loader2, LogIn } from 'lucide-react';
 
-
-
 const LoginFormSchema = z.object({
   email: z.string().email('Adresse email invalide.'),
   password: z.string().min(8, 'Mot de passe invalide (8 caractères minimum).'),
