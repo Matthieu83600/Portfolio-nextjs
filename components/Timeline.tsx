@@ -30,7 +30,7 @@ const TimeLine = () => {
   return (
     <ul
       ref={carouselRef}
-      className="flex items-center justify-center cursor-pointer snap-x flex-row flex-nowrap gap-5 overflow-x-auto py-5"
+      className="flex items-start justify-center cursor-pointer snap-x flex-row flex-nowrap gap-5 overflow-x-auto py-5"
     >
       {isLoading ? (
         <Loader2 size={32} className="animate-spin text-center" />

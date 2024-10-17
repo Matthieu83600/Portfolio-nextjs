@@ -1,4 +1,5 @@
 import supabase from '@/lib/supabaseClient';
+import { TimelineItem } from '@/types/timeline.types';
 
 export const fetchTimeline = async () => {
   try {
@@ -12,7 +13,7 @@ export const fetchTimeline = async () => {
   }
 };
 
-export const createTimelineItem = async (item) => {
+export const createTimelineItem = async (item: TimelineItem) => {
   try {
     const { data, error } = await supabase
       .from('timeline')

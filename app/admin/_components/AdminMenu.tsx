@@ -25,12 +25,18 @@ const AdminMenu = () => {
             <Link href="/admin">Dashboard</Link>
           </li>
           <li>
+            <Link href="/admin/timeline">Timeline</Link>
+          </li>
+          <li>
             <Link href="/admin/technologies">Technologies</Link>
           </li>
           <li>
             <Link href="/admin/projets">Projets</Link>
           </li>
-          <li className="inline-flex items-center gap-1 cursor-pointer" onClick={handleLogout}>
+          <li
+            className="inline-flex cursor-pointer items-center gap-1"
+            onClick={handleLogout}
+          >
             <GrLogin size={20} />
             Se déconnecter
           </li>

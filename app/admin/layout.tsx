@@ -12,11 +12,11 @@ type AdminLayoutProps = {
 
 const AdminLayout = ({ children }: AdminLayoutProps) => {
   return (
-    <main className="flex w-screen h-screen">
-      <div className='w-1/5'>
+    <main className="flex w-full justify-around">
+      <div className='w-[12%]'>
         <AdminMenu />
       </div>
-      <div className='w-4/5'>{children}</div>
+      <div className='w-[88%]'>{children}</div>
     </main>
   );
 };

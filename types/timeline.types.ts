@@ -1,5 +1,5 @@
 export interface TimelineItem {
-  id: number;
+  id?: number;
   time: number;
   text: string;
 }
