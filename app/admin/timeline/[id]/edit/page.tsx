@@ -40,11 +40,11 @@ const UpdateTimeline = ({ params }: { params: { id: number } }) => {
     },
   });
 
-    const handleUpdateSubmit = async (values: UpdateTimelineValues) => {
-      const updatePartialTimelineItem: TimelineItem = {
-        time: parseInt(values.time),
-        text: values.text,
-      };
+  const handleUpdateSubmit = async (values: UpdateTimelineValues) => {
+    const updatePartialTimelineItem: TimelineItem = {
+      time: parseInt(values.time),
+      text: values.text,
+    };
     try {
       setIsLoading(true);
       await updateTimelineItem(params.id ?? 0, updatePartialTimelineItem);
