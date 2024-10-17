@@ -25,3 +25,33 @@ export const createTimelineItem = async (item: TimelineItem) => {
     throw error;
   }
 };
+
+export const updateTimelineItem = async (
+  id: number,
+  item: Partial<TimelineItem>
+) => {
+  try {
+    const { data, error } = await supabase
+      .from('timeline')
+      .update(item)
+      .eq('id', id)
+      .select();
+
+    if (error) throw error;
+
+    return data;
+  } catch (error) {
+    throw error;
+  }
+};
+
+export const deleteTimelineItem = async (id: number) => {
+  try {
+    const { error } = await supabase.from('timeline').delete().eq('id', id);
+
+    if (error) throw error;
+    return true;
+  } catch (error) {
+    throw error;
+  }
+};

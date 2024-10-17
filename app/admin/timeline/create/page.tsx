@@ -81,7 +81,6 @@ const CreateTimeline = () => {
             </CardDescription>
           </CardHeader>
           <CardContent>
-            {/* Champ de saisie pour l'année */}
             <FormField
               control={form.control}
               name="time"
@@ -95,8 +94,6 @@ const CreateTimeline = () => {
                 </FormItem>
               )}
             />
-
-            {/* Champ de saisie pour le texte */}
             <FormField
               control={form.control}
               name="text"
