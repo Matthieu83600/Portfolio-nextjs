@@ -7,7 +7,7 @@ import { toast } from 'sonner';
 
 const TimeLine = () => {
   const [timelineData, setTimelineData] = useState<TimelineItem[]>([]);
-  const [isLoading, setIsLoading] = useState(false); 
+  const [isLoading, setIsLoading] = useState(false);
   const carouselRef = useRef(null);
 
   useEffect(() => {
@@ -30,7 +30,7 @@ const TimeLine = () => {
   return (
     <ul
       ref={carouselRef}
-      className="flex items-start justify-center cursor-pointer snap-x flex-row flex-nowrap gap-5 overflow-x-auto py-5"
+      className="flex cursor-pointer snap-x flex-row flex-nowrap items-start justify-center gap-5 overflow-x-auto py-5"
     >
       {isLoading ? (
         <Loader2 size={32} className="animate-spin text-center" />

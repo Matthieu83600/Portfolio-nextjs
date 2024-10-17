@@ -1,8 +1,8 @@
 const DashboardAdmin = () => {
   return (
     <>
-      <section className="flex flex-col justify-center w-screen h-screen">
-        <h2 className="text-2xl mx-auto">Bienvenue Matthieu !</h2>
+      <section className="flex h-screen w-screen flex-col justify-center">
+        <h2 className="mx-auto text-2xl">Bienvenue Matthieu !</h2>
       </section>
     </>
   );

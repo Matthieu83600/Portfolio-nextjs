@@ -3,7 +3,7 @@ import type { Metadata } from 'next';
 import AdminMenu from './_components/AdminMenu';
 
 export const metadata: Metadata = {
-  title: 'Admin Dashboard'
+  title: 'Admin Dashboard',
 };
 
 type AdminLayoutProps = {
@@ -13,10 +13,10 @@ type AdminLayoutProps = {
 const AdminLayout = ({ children }: AdminLayoutProps) => {
   return (
     <main className="flex w-full justify-around">
-      <div className='w-[12%]'>
+      <div className="w-[12%]">
         <AdminMenu />
       </div>
-      <div className='w-[88%]'>{children}</div>
+      <div className="w-[88%]">{children}</div>
     </main>
   );
 };
