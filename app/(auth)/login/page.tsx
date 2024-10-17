@@ -40,6 +40,10 @@ const LoginPage = () => {
   const router = useRouter();
   const form = useForm<LoginFormValues>({
     resolver: zodResolver(LoginFormSchema),
+    defaultValues: {
+      email: '',
+      password: '',
+    },
   });
   const handleLoginSubmit = async (values: LoginFormValues) => {
     try {
